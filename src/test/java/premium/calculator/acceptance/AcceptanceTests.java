@@ -5,10 +5,9 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
+import premium.calculator.StartTest;
 import premium.calculator.controller.dto.PolicyDto;
 import premium.calculator.controller.dto.PolicyObjectDto;
 import premium.calculator.controller.dto.PolicySubObjectDto;
@@ -23,8 +22,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static premium.calculator.controller.dto.RiskTypeDto.FIRE;
 import static premium.calculator.controller.dto.RiskTypeDto.THEFT;
 
-@SpringBootTest
-@AutoConfigureMockMvc
+@StartTest
 class AcceptanceTests {
 
     private static final String URL = "/api/calculated";

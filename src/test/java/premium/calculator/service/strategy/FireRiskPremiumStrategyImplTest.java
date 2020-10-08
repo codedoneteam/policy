@@ -9,6 +9,15 @@ import static java.math.BigDecimal.valueOf;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static premium.calculator.domain.RiskType.FIRE;
 
+/*
+    There are two zones of equivalence: before threshold and after threshold.
+    So we should write three tests.
+    The first before threshold, the second threshold and the third after threshold.
+
+    P.S. The comments in the code are used solely to explain how the work is done.
+*/
+
+
 class FireRiskPremiumStrategyImplTest implements PolicyCreator {
 
     private PremiumStrategy premiumStrategy = new FireRiskPremiumStrategyImpl(valueOf(0.014), valueOf(100), valueOf(0.024));
