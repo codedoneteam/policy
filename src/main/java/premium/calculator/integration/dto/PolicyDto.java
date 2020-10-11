@@ -1,4 +1,4 @@
-package premium.calculator.controller.dto;
+package premium.calculator.integration.dto;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;

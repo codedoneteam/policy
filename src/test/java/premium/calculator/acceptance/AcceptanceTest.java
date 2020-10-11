@@ -7,11 +7,11 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
-import premium.calculator.StartTest;
-import premium.calculator.controller.dto.PolicyDto;
-import premium.calculator.controller.dto.PolicyObjectDto;
-import premium.calculator.controller.dto.PolicySubObjectDto;
-import premium.calculator.controller.dto.PremiumDto;
+import premium.calculator.annotation.StartTest;
+import premium.calculator.integration.dto.PolicyDto;
+import premium.calculator.integration.dto.PolicyObjectDto;
+import premium.calculator.integration.dto.PolicySubObjectDto;
+import premium.calculator.integration.dto.PremiumDto;
 
 import java.util.List;
 
@@ -19,11 +19,11 @@ import static java.math.BigDecimal.valueOf;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-import static premium.calculator.controller.dto.RiskTypeDto.FIRE;
-import static premium.calculator.controller.dto.RiskTypeDto.THEFT;
+import static premium.calculator.integration.dto.RiskTypeDto.FIRE;
+import static premium.calculator.integration.dto.RiskTypeDto.THEFT;
 
 @StartTest
-class AcceptanceTests {
+class AcceptanceTest {
 
     private static final String URL = "/api/calculated";
     private static final String CONTENT_TYPE = "application/json";
@@ -68,7 +68,7 @@ class AcceptanceTests {
 		Assertions.assertEquals(0, result.getAmount().compareTo(valueOf(2.28)));
 	}
 
-    @DisplayName("Acceptance test Nr 1")
+    @DisplayName("Acceptance test Nr 2")
 	@Test
 	void acceptanceTest2() throws Exception {
 		var policyDto = new PolicyDto();

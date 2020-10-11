@@ -2,11 +2,11 @@ package premium.calculator.service.calculator;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
-import premium.calculator.controller.calculator.PremiumCalculator;
-import premium.calculator.controller.dto.PolicyDto;
-import premium.calculator.controller.dto.PremiumDto;
 import premium.calculator.domain.Premium;
 import premium.calculator.exception.PolicyNullException;
+import premium.calculator.integration.calculator.PremiumCalculator;
+import premium.calculator.integration.dto.PolicyDto;
+import premium.calculator.integration.dto.PremiumDto;
 import premium.calculator.service.calculator.mapper.PolicyMapper;
 import premium.calculator.service.calculator.mapper.PremiumMapper;
 import premium.calculator.service.calculator.strategy.PremiumStrategy;

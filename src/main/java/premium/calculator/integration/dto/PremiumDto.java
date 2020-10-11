@@ -1,4 +1,4 @@
-package premium.calculator.controller.dto;
+package premium.calculator.integration.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,8 +1,8 @@
 package premium.calculator.service.calculator.mapper;
 
 import org.mapstruct.Mapper;
-import premium.calculator.controller.dto.PremiumDto;
 import premium.calculator.domain.Premium;
+import premium.calculator.integration.dto.PremiumDto;
 
 @Mapper(componentModel = "spring")
 public interface PremiumMapper {
