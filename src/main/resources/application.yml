@@ -10,4 +10,3 @@ theft:
   coefficient:
     default: 0.11
     coefficientAfterThreshold: 0.05
-
