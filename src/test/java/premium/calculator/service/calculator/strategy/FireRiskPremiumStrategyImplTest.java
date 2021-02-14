@@ -21,7 +21,7 @@ import static premium.calculator.domain.RiskType.FIRE;
 
 class FireRiskPremiumStrategyImplTest implements PolicyCreator {
 
-    private PremiumStrategy premiumStrategy = new FireRiskPremiumStrategyImpl(valueOf(0.014), valueOf(100), valueOf(0.024));
+    private final PremiumStrategy premiumStrategy = new FireRiskPremiumStrategyImpl(valueOf(0.014), valueOf(100), valueOf(0.024));
 
     @DisplayName("Test FIRE calculation strategy before threshold")
     @Test

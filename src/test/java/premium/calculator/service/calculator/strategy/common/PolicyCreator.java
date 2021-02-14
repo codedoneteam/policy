@@ -8,7 +8,7 @@ import premium.calculator.domain.RiskType;
 import java.math.BigDecimal;
 import java.util.Arrays;
 
-interface PolicyCreator {
+public interface PolicyCreator {
 
     String POLICE_NUMBER = "00001";
 

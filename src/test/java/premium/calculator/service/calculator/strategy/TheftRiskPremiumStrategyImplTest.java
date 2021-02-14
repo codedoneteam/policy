@@ -20,7 +20,7 @@ import static premium.calculator.domain.RiskType.THEFT;
 
 class TheftRiskPremiumStrategyImplTest implements PolicyCreator {
 
-    private PremiumStrategy premiumStrategy = new TheftRiskPremiumStrategyImpl(valueOf(0.11), valueOf(15), valueOf(0.05));
+    private final PremiumStrategy premiumStrategy = new TheftRiskPremiumStrategyImpl(valueOf(0.11), valueOf(15), valueOf(0.05));
 
     @DisplayName("Test THEFT calculation strategy before threshold")
     @Test
