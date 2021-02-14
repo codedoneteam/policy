@@ -1,4 +1,4 @@
-package premium.calculator.acceptance;
+package premium.calculator.integration;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Assertions;
@@ -7,11 +7,10 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
-import premium.calculator.annotation.StartTest;
-import premium.calculator.integration.dto.PolicyDto;
-import premium.calculator.integration.dto.PolicyObjectDto;
-import premium.calculator.integration.dto.PolicySubObjectDto;
-import premium.calculator.integration.dto.PremiumDto;
+import premium.calculator.contorller.dto.PolicyDto;
+import premium.calculator.contorller.dto.PolicyObjectDto;
+import premium.calculator.contorller.dto.PolicySubObjectDto;
+import premium.calculator.contorller.dto.PremiumDto;
 
 import java.util.List;
 
@@ -19,10 +18,10 @@ import static java.math.BigDecimal.valueOf;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-import static premium.calculator.integration.dto.RiskTypeDto.FIRE;
-import static premium.calculator.integration.dto.RiskTypeDto.THEFT;
+import static premium.calculator.contorller.dto.RiskTypeDto.FIRE;
+import static premium.calculator.contorller.dto.RiskTypeDto.THEFT;
 
-@StartTest
+@ApplicationTest
 class AcceptanceTest {
 
     private static final String URL = "/api/calculated";

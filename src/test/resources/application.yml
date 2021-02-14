@@ -1,13 +1,13 @@
-fire:
-  threshold: 100
-  coefficient:
-    default: 0.014
-    coefficientAfterThreshold: 0.024
+app:
+  fire:
+    threshold: 100
+    coefficient:
+      default: 0.014
+      coefficientAfterThreshold: 0.024
 
 
-theft:
-  threshold: 15
-  coefficient:
-    default: 0.11
-    coefficientAfterThreshold: 0.05
-
+  theft:
+    threshold: 15
+    coefficient:
+      default: 0.11
+      coefficientAfterThreshold: 0.05

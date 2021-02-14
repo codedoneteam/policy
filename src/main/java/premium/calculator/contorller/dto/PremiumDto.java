@@ -1,4 +1,4 @@
-package premium.calculator.integration.dto;
+package premium.calculator.contorller.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

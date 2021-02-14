@@ -1,4 +1,4 @@
-package premium.calculator.integration;
+package premium.calculator.contorller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Assertions;
@@ -9,17 +9,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
-import premium.calculator.annotation.StartTest;
-import premium.calculator.integration.calculator.PremiumCalculator;
-import premium.calculator.integration.dto.PolicyDto;
-import premium.calculator.integration.dto.PremiumDto;
+import premium.calculator.contorller.dto.PolicyDto;
+import premium.calculator.contorller.dto.PremiumDto;
+import premium.calculator.integration.ApplicationTest;
 
 import static java.math.BigDecimal.TEN;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-@StartTest
+@ApplicationTest
 class PremiumControllerTest {
 
     private static final String NUMBER = "00001";

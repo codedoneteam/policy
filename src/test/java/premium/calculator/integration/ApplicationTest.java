@@ -1,4 +1,4 @@
-package premium.calculator.annotation;
+package premium.calculator.integration;
 
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -11,5 +11,5 @@ import java.lang.annotation.*;
 @Inherited
 @SpringBootTest
 @AutoConfigureMockMvc
-public @interface StartTest {
+public @interface ApplicationTest {
 }

@@ -1,4 +1,4 @@
-package premium.calculator.service.strategy;
+package premium.calculator.service.calculator.strategy.common;
 
 import premium.calculator.domain.PolicySubObject;
 import premium.calculator.exception.CoveredSumException;
@@ -12,7 +12,7 @@ import java.util.List;
     P.S. The comments in the code are used solely to explain how the work is done.
 */
 
-interface Summarize {
+public interface Summarize {
 
     default BigDecimal summarizeCoveredSum(List<PolicySubObject> subObjects) {
         return subObjects.stream()

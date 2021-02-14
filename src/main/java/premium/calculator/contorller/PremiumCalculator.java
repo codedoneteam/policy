@@ -1,7 +1,7 @@
-package premium.calculator.integration.calculator;
+package premium.calculator.contorller;
 
-import premium.calculator.integration.dto.PolicyDto;
-import premium.calculator.integration.dto.PremiumDto;
+import premium.calculator.contorller.dto.PolicyDto;
+import premium.calculator.contorller.dto.PremiumDto;
 
 /*
     The PremiumCalculator interface is in this package due dependency inversion principle.

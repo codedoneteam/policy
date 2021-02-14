@@ -1,4 +1,4 @@
-package premium.calculator.service.strategy;
+package premium.calculator.service.calculator.strategy.common;
 
 import premium.calculator.domain.Policy;
 import premium.calculator.domain.PolicyObject;

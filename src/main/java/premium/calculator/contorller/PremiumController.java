@@ -1,12 +1,11 @@
-package premium.calculator.integration;
+package premium.calculator.contorller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-import premium.calculator.integration.calculator.PremiumCalculator;
-import premium.calculator.integration.dto.PolicyDto;
-import premium.calculator.integration.dto.PremiumDto;
+import premium.calculator.contorller.dto.PolicyDto;
+import premium.calculator.contorller.dto.PremiumDto;
 
 import javax.validation.Valid;
 

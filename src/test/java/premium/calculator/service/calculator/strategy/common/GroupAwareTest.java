@@ -1,4 +1,4 @@
-package premium.calculator.service.strategy;
+package premium.calculator.service.calculator.strategy.common;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;

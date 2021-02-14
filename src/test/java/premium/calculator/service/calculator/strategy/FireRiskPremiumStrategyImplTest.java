@@ -1,8 +1,9 @@
-package premium.calculator.service.strategy;
+package premium.calculator.service.calculator.strategy;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import premium.calculator.service.calculator.strategy.PremiumStrategy;
+import premium.calculator.service.calculator.PremiumStrategy;
+import premium.calculator.service.calculator.strategy.common.PolicyCreator;
 
 import static java.math.BigDecimal.TEN;
 import static java.math.BigDecimal.valueOf;

@@ -7,12 +7,10 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
-import premium.calculator.integration.dto.PolicyDto;
-import premium.calculator.integration.dto.PolicyObjectDto;
-import premium.calculator.integration.dto.PolicySubObjectDto;
+import premium.calculator.contorller.dto.PolicyDto;
+import premium.calculator.contorller.dto.PolicyObjectDto;
+import premium.calculator.contorller.dto.PolicySubObjectDto;
 import premium.calculator.service.calculator.mapper.PolicyMapperImpl;
-import premium.calculator.service.calculator.mapper.PremiumMapperImpl;
-import premium.calculator.service.calculator.strategy.PremiumStrategy;
 
 import static java.math.BigDecimal.*;
 import static java.util.List.of;

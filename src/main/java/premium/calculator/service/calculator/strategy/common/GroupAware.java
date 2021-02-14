@@ -1,4 +1,4 @@
-package premium.calculator.service.strategy;
+package premium.calculator.service.calculator.strategy.common;
 
 import premium.calculator.domain.Policy;
 import premium.calculator.domain.PolicySubObject;
@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
     P.S. The comments in the code are used solely to explain how the work is done.
 */
 
-interface GroupAware {
+public interface GroupAware {
 
     default Map<RiskType, List<PolicySubObject>> group(Policy policy) {
         if (policy == null) throw new PolicyNullException();

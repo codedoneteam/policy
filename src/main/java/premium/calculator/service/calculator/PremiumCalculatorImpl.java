@@ -2,14 +2,12 @@ package premium.calculator.service.calculator;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
+import premium.calculator.contorller.PremiumCalculator;
+import premium.calculator.contorller.dto.PolicyDto;
+import premium.calculator.contorller.dto.PremiumDto;
 import premium.calculator.domain.Premium;
 import premium.calculator.exception.PolicyNullException;
-import premium.calculator.integration.calculator.PremiumCalculator;
-import premium.calculator.integration.dto.PolicyDto;
-import premium.calculator.integration.dto.PremiumDto;
 import premium.calculator.service.calculator.mapper.PolicyMapper;
-import premium.calculator.service.calculator.mapper.PremiumMapper;
-import premium.calculator.service.calculator.strategy.PremiumStrategy;
 
 import java.math.BigDecimal;
 import java.util.List;
