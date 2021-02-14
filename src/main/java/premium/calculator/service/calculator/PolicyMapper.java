@@ -1,7 +1,7 @@
 package premium.calculator.service.calculator;
 
 import org.mapstruct.Mapper;
-import premium.calculator.contorller.dto.PolicyDto;
+import premium.calculator.controller.dto.PolicyDto;
 import premium.calculator.domain.Policy;
 
 @Mapper(componentModel = "spring")

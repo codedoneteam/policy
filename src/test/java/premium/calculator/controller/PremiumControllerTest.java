@@ -1,4 +1,4 @@
-package premium.calculator.contorller;
+package premium.calculator.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Assertions;
@@ -9,8 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
-import premium.calculator.contorller.dto.PolicyDto;
-import premium.calculator.contorller.dto.PremiumDto;
+import premium.calculator.controller.dto.PolicyDto;
+import premium.calculator.controller.dto.PremiumDto;
 import premium.calculator.integration.ApplicationTest;
 
 import static java.math.BigDecimal.TEN;

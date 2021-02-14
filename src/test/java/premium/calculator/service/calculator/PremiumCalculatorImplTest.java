@@ -7,9 +7,9 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
-import premium.calculator.contorller.dto.PolicyDto;
-import premium.calculator.contorller.dto.PolicyObjectDto;
-import premium.calculator.contorller.dto.PolicySubObjectDto;
+import premium.calculator.controller.dto.PolicyDto;
+import premium.calculator.controller.dto.PolicyObjectDto;
+import premium.calculator.controller.dto.PolicySubObjectDto;
 import premium.calculator.service.calculator.mapper.PolicyMapperImpl;
 
 import static java.math.BigDecimal.*;
