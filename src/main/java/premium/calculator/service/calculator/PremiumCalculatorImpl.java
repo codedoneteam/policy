@@ -7,7 +7,6 @@ import premium.calculator.contorller.dto.PolicyDto;
 import premium.calculator.contorller.dto.PremiumDto;
 import premium.calculator.domain.Premium;
 import premium.calculator.exception.PolicyNullException;
-import premium.calculator.service.calculator.mapper.PolicyMapper;
 
 import java.math.BigDecimal;
 import java.util.List;

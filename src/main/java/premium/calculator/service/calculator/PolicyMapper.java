@@ -1,4 +1,4 @@
-package premium.calculator.service.calculator.mapper;
+package premium.calculator.service.calculator;
 
 import org.mapstruct.Mapper;
 import premium.calculator.contorller.dto.PolicyDto;
